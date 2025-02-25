@@ -37,11 +37,30 @@
     background-color: white;
     display: flex;
     justify-content: left;
+    padding: 4px;
     padding-left: var(--espaciado);
+    box-shadow: var(--sombra);
 }
 
 .navigator-logo h1{
     color: var(--rosa-obscuro);
     font-size: 2rem;
     margin: 8px;
+}
+
+.navigator-menu {
+    margin-top: 8px;
+    width: 60%;
+    background-color: white;
+    box-shadow: var(--sombra);
+    border: 1px solid var(--rosa-pastel);
+    border-radius: 10px;
+}
+
+.navigator-menu-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 12px 4px;
+    list-style: none;
 }
