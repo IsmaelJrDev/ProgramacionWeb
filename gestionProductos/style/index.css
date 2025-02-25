@@ -88,3 +88,30 @@
     color: var(--rosa-fuerte);
 }
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 16px;
+}
+
+.search-form div i {
+    border-bottom: 1px solid var(--gris);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.search-form div input{
+    background-color: transparent;
+    color: var(--gris);
+    border: none;
+    border-bottom: 1px solid var(--gris);
+    text-align: center;
+}
+/*Eliminar propiedad del search, para que no se muestre al seleccionarlo*/
+.search-form div input:focus{
+    outline: none;
+    border-bottom-width: 2px;
+}
