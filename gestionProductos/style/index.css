@@ -50,7 +50,7 @@
 
 .navigator-menu {
     margin-top: 8px;
-    width: 60%;
+    min-width: 90%;
     background-color: white;
     box-shadow: var(--sombra);
     border: 1px solid var(--rosa-pastel);
@@ -70,6 +70,7 @@
     color: white;
     padding: 8px;
     border-radius: 12px;
+    margin-right: 4px;
 }
 
 .navigator-menu-item a {
@@ -77,3 +78,13 @@
     color: white;
     font-size: 1.4rem;
 }
+
+.navigator-menu-item_active{
+    border: 1px solid var(--rosa-fuerte);
+    background-color: white;
+}
+
+.navigator-menu-item_active a{
+    color: var(--rosa-fuerte);
+}
+
