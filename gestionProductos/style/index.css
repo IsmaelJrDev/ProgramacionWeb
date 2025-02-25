@@ -64,3 +64,16 @@
     padding: 12px 4px;
     list-style: none;
 }
+
+.navigator-menu-item {
+    background-color: var(--rosa-fuerte);
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.navigator-menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
