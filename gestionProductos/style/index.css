@@ -1,11 +1,47 @@
+/*Definicion de variables que se usaran en el proyecto*/
 :root{
-    --color-primario: #d313a3;
+    --rosa-fuerte: oklch(0.586 0.253 17.585);
+    --rosa-pastel: oklch(0.892 0.058 10.001);
+    --rosa-claro: oklch(0.969 0.015 12.422);
+    --rosa-obscuro: oklch(0.271 0.105 12.094);
+    --gris: oklch(0.551 0.027 264.3642);
+    --sombra: 0 0 10px rgba(0,0,0,0.7);
+    --fuente: sans-serif;
+    --espaciado: calc(100%*1/12);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--fuente);
     font-size: 1rem;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa-claro);
+}
+
+.navigator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator-logo{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    padding-left: var(--espaciado);
+}
+
+.navigator-logo h1{
+    color: var(--rosa-obscuro);
+    font-size: 2rem;
+    margin: 8px;
 }
