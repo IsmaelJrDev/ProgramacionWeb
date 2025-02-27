@@ -96,8 +96,11 @@ main{
     padding: 16px;
 }
 
-.search-form div i {
+.search-form div{
     border-bottom: 1px solid var(--gris);
+}
+
+.search-form div i {
     margin: 0;
     padding: 0;
     
@@ -107,11 +110,18 @@ main{
     background-color: transparent;
     color: var(--gris);
     border: none;
-    border-bottom: 1px solid var(--gris);
     text-align: center;
 }
 /*Eliminar propiedad del search, para que no se muestre al seleccionarlo*/
 .search-form div input:focus{
     outline: none;
     border-bottom-width: 2px;
+}
+
+.container-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;    
 }
