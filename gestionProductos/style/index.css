@@ -126,10 +126,11 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 24px;
+    margin-bottom: 70px;;
 }
 
 .card{
-    width: 200px;
+    width: 160px;
     height: 150px;
     margin: 12px;
     padding: 8px;
@@ -167,8 +168,9 @@ main{
 }
 
 .card-button{
-background-color: transparent;
+    background-color: transparent;
     border: none;
+    margin-top: 4px;
 }
 
 .card-button:focus{
@@ -177,15 +179,53 @@ background-color: transparent;
 
 .card-button_delete{
     border: 1px solid var(--rosa-fuerte);
-    padding: 4px 12px;
+    padding: 4px 4px;
     border-radius: 4px;
     color: var(--rosa-fuerte);
     font-size: 0.9rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .card-button:hover{
     background-color: var(--rosa-fuerte);
     box-shadow: 0px 0px 8px rgba(255, 15, 150, 0.5);
     color: white;
+}
+/*Colocar barra superior fija*/
+.navigator{
+    position: sticky;
+    top: 0;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 12px 0px;
+    background-color: var(--rosa-pastel);
+    box-shadow: 0 -5px 12px rgba(255, 15, 150, 0.5);
+}
+
+@media (max-width:639px){
+    .card{
+        transition: none;
+    }
+
+    .card:hover{
+        transition: none;
+    }
+}
+/*Responsive para tablet*/
+@media (min-width:640px){
+    .card{
+        width: 200px;
+    }
+
+    .card div {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
 }
