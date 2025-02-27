@@ -181,4 +181,11 @@ background-color: transparent;
     border-radius: 4px;
     color: var(--rosa-fuerte);
     font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-button:hover{
+    background-color: var(--rosa-fuerte);
+    box-shadow: 0px 0px 8px rgba(255, 15, 150, 0.5);
+    color: white;
 }
