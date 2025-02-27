@@ -118,10 +118,33 @@ main{
     border-bottom-width: 2px;
 }
 
+/*Animación de Cards*/
+
 .container-list{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid red;    
+    margin-top: 24px;
+}
+
+.card{
+    width: 200px;
+    height: 150px;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--gris);
+    box-shadow: var(--sombra);    
+    transition: all 0.2s ease-in-out; /*Efecto de animacion en las cards*/
+    display: flex;
+    flex-direction: column;
+}
+/*Animacion del card*/
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-title{
+    color: var(--rosa-fuerte);
 }
