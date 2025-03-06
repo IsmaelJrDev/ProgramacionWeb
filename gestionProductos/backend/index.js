@@ -11,7 +11,6 @@ app.use(express.json()); // INTERPRETE DE JSON
 // app.use("/una_ruta",express.json()) SOLO SE VA EJECUTAR EN ESA RUTA
 app.use(cors()) // PERMITE O NIEGA EL ACCESO A LAS IPs
 
-
 // MÉTODOS GET
 app.get("/", (req, res)/** PARA LA FUNCIÓN DE FLECHA: Lo que requiero y lo que devuelvo */ => {
     //res.send("<h1>Hola desde Express</h1>"); PARA MANDAR TEXTO PLANO.
