@@ -7,7 +7,16 @@ class ProductosService{
         return productos;
     }
 
-    getOneById(){
+    getOneById(id){
+        const producto = productos.filter((pt) => pt.id === id)
+    }
 
+    create (nombre, precio, stock){
+        // Convertir en objeto
+        const nurvoProducto = {
+            nombre:nombre,
+            precio:precio,
+            stock:stock
+        }
     }
 }
