@@ -8,7 +8,8 @@ class ProductosService{
     }
 
     getOneById(id){
-        const producto = productos.filter((pt) => pt.id === id)
+        console.log({id, numero:1,cadena:"13"})
+        const producto = productos.filter((pt) => pt.id == id)
     }
 
     create (nombre, precio, stock){
