@@ -1,6 +1,6 @@
 <h1 text-align:center>Tienda Virtual</h1>
 
-## Propositó
+## Propósito
 Este proyecto fue realizado con el fin del aprendizaje sobre el trabajo con MERN (MongoDB, Express, React y Node.js); siendo estas el conjunto de tecnologías mas usadas para el desarrollo de aplicaciones web completas.
 
 ## Estructura del proyecto
