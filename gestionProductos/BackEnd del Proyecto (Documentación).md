@@ -1,6 +1,3 @@
-# Estructura del proyecto
-Este proyecto cuent estructura de una variante moderna del MVC (Model View Controller), lo cual hace al proyecto sea escalable 
-
 
 ```JavaScript
 //import express from "express"
