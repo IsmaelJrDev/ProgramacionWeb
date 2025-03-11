@@ -20,7 +20,22 @@ class ProductoController{
     }
 
     //TODO: Colocar el controller de update y de delete
-    
+
+    static update(req, res) {
+        const { id } = req.params;
+        const { nombre, precio, stock } = req.body;
+        return res.json(ProductosService.update(id, nombre, precio, stock));
+    }
+
+    static delete(req, res) {
+        const { id } = req.params;
+        const eliminado = ProductosService.delete(id);
+        if (!eliminado) {
+            return res.status(404).json({ error: "Producto no encontrado" });
+        }
+        return res.json(eliminado);
+    }
+
 }
 
 module.exports = {ProductoController}

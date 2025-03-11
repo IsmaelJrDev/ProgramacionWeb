@@ -25,18 +25,24 @@ class ProductosService{
     }
 
     update(id, objeto){
-        // TODO: usar el id para ubicar el producto a cambiar y usar el objeto -> obtener datos a cambiar {stock:99}
-        const productoActualizado = {};
+        //TODO:usar el id para ubicar el producto a cambiar objeto -> para obtener los datos a cambiar {stock:99}
+        const actualizar = productos.findIndex((pt) => pt.id == id);
+        if (actualizar === -1) return null; // Retorna null si no se encuentra el producto
 
-        return productoActualizado;
+        productos[actualizar] = { ...productos[actualizar], ...objeto }; // Actualiza los valores manteniendo los existentes
+        return productos[actualizar];
     }
 
     delete(id){
-        // TODO: usar el id para ubicar el producto a eliminar
-        const productoELiminado = {};
+        //TODO:usar el id para ubicar el producto a cambiar
+        const eliminar = productos.findIndex((pt) => pt.id == id);
+        if (eliminar === -1) return null; // Retorna null si no se encuentra el producto
 
-        return productoELiminado;
+        const productoEliminado = productos.splice(eliminar, 1)[0]; // Elimina el producto y lo devuelve
+        return productoEliminado;
     }
+
+    
 }
 
 // Exportacion
