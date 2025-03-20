@@ -1,0 +1,98 @@
+:root {
+    --gris-oscuro: #2E2E2E;
+    --gris-claro: #CCCCCC;
+    --blanco: #FFFFFF;
+    --azul-brillante: #0066FF;
+    --naranja-vibrante: #FF6600;
+    --metalico: #B0BEC5;
+    --sombra: 0 6px 10px rgba(0, 0, 0, 0.2);
+    --fuente: "Poppins", sans-serif;
+    --espaciado: calc(100% * 1 / 12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+body {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Encabezado */
+.formulario__titulo {
+    font-size: 2rem;
+    color: var(--azul-brillante);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gris-claro);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    max-width: 500px;
+    margin: auto;
+}
+
+.formulario__label {
+    font-size: 1.2rem;
+    color: var(--azul-brillante);
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.formulario__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid var(--metalico);
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 16px;
+    color: var(--gris-oscuro);
+}
+
+/* Botones */
+.formulario__boton {
+    background-color: var(--naranja-vibrante);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background-color 0.3s;
+}
+
+.formulario__boton:hover {
+    background-color: #E65C00; /* Naranja oscuro */
+}
+
+.formulario__boton--reset {
+    background-color: var(--gris-oscuro);
+    border: 2px solid var(--blanco);
+}
+
+.formulario__boton--reset:hover {
+    background-color: var(--blanco);
+    color: var(--gris-oscuro);
+}
